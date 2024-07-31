@@ -1,6 +1,6 @@
 import React from "react";
 import Categories from "./pages/Categories";
-import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Router, Routes, Navigate } from "react-router-dom";
 import Products from "./pages/Proudcts";
 import SingleProduct from "./pages/SingleProduct";
 import Login from "./pages/Login";
@@ -11,7 +11,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Navigate to="/login" replace />} />
           <Route path="/register" element={<Register />} />
           <Route path="/categories" element={<Categories />} />
           <Route path="/products/:id" element={<Products />} />
