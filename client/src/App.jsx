@@ -16,7 +16,7 @@ function App() {
           <Route path="/categories" element={<Categories />} />
           <Route path="/products/:id" element={<Products />} />
           <Route path="/products/:id/:product" element={<SingleProduct />} />
-          <Route path="*" element={<h2>You're Lost</h2>} />
+          <Route path="/" element={<Navigate to="/login" replace />} />
         </Routes>
       </BrowserRouter>
     </>
