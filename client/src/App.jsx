@@ -11,12 +11,12 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-        <Route path="/" element={<Navigate to="/login" replace />} />
+        <Route path="/" element={<Navigate to="/categories" replace />} />
           <Route path="/register" element={<Register />} />
           <Route path="/categories" element={<Categories />} />
           <Route path="/products/:id" element={<Products />} />
           <Route path="/products/:id/:product" element={<SingleProduct />} />
-          <Route path="/" element={<Navigate to="/login" replace />} />
+          <Route path="/" element={<Navigate to="/categories" replace />} />
         </Routes>
       </BrowserRouter>
     </>
